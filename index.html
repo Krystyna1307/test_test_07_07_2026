@@ -4,22 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test_test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400,500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href=""
-          >SIMPLY CHOCOLATE<img src="./images/chocolate.svg" alt="logo"
+    <header class="header">
+      <nav class="header-navigation">
+        <a href="" class="header-logo"
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE<img
+            src="./images/chocolate.svg"
+            class="header-logo-image"
+            alt="logo"
         /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">How it’s made?</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="header-social-list">
+        <li class="header-social-item">
           <a
+            class="header-social-link"
             href=""
             target="_blank"
             rel="noopener noreferrer
@@ -27,8 +52,9 @@
           ></a
           >insta
         </li>
-        <li>
+        <li class="header-social-item">
           <a
+            class="header-social-link"
             href=""
             target="_blank"
             rel="noopener noreferrer
@@ -36,8 +62,9 @@
           ></a
           >fai
         </li>
-        <li>
+        <li class="header-social-item">
           <a
+            class="header-social-link"
             href=""
             target="_blank"
             rel="noopener noreferrer
@@ -48,17 +75,18 @@
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="">How it’s made</a>
-        <a href="">scroll down</a>
+        <button type="button" class="hero-btn">Buy now</button>
+        <a href="#made" class="hero-made-link">How it’s made</a>
+        <a href="" class="hero-scroll-link">scroll down</a>
       </section>
+
       <section>
-        <h2 hidden></h2>
+        <h2 hidden>Benefits</h2>
         <ul>
           <li>
             <h3>Unsurpassed taste</h3>
@@ -163,7 +191,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="made">
         <h2>hOW IT’S made?</h2>
         <img src="./images/image1.jpg" alt="liquid" width="600" height="400" />
         <h3>
